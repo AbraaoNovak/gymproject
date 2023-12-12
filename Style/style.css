@@ -38,7 +38,7 @@ body {
 .navigation ul {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 .navigation ul li a{
     color: #FFF;
@@ -47,6 +47,7 @@ body {
 }
 .navigation ul li a:hover {
     color: #CCC;
+    border-bottom: 1px solid #ccc;
 }
 .menu {
     cursor: pointer;
@@ -67,17 +68,7 @@ body {
     background-size: cover;
     width: 100%;
 }
-.banner-image .btn{
-    position: absolute;
-    top: 320px;
-    right: 41%;
-    background-color: var(--red);
-    padding: 5px 15px;
-    border-radius: 5px;
-    color: #FFF;
-    font-weight: 200;
-    transition: all 0.3s;
-}
+
 .btn:hover {
     transform: scale(1.1);
     background-color:var(--btn-hover) ;
@@ -93,6 +84,12 @@ body {
     font-size: 1.2rem;
     color: var(--color-font-primaria);
     border-bottom: 1px solid var(--color-font-primaria);
+}
+@media screen and (min-width: 450px){
+    .primeira-section .titulo{
+    font-size: 1.5rem;
+    width: 23%;
+    }
 }
 .primeira-section .descricao {
     margin: 0 2rem;
@@ -121,7 +118,7 @@ body {
 .divider-img {
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
 }
 .beneficios {
     margin-top: -10px;
@@ -142,7 +139,7 @@ body {
 }
 .esteira-icon, .halter-icon, .people-icon, .localidade-icon {
 
-    margin: 0 0.5rem 0 0;
+    margin: 0 0.5rem 0 -3rem;
     width: 60px;
 }
 .textos-beneficios {
@@ -153,7 +150,7 @@ body {
     flex-direction: column;
 }
 .titulo-beneficio {
-    width: 170px;
+    width: 177px;
     color: var(--red);
     white-space: nowrap;
     border-bottom: 1px solid red;
@@ -193,12 +190,15 @@ body {
     margin: 0.7rem auto;
 }
 .plano-1, .plano-2, .plano-3 {
-    background-color: #FFF;
+    /* background-color: #FFF; */
     margin: 1rem auto;
     padding: 2rem 5rem;
     border: 2px solid red;
     border-radius: 15px;
     transition: 0.3s all;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    box-shadow:  5px 5px 13px #d3d3d3,
+             -5px -5px 13px #ededed;
 }
 .plano-2, .plano-3 {
     background-color: #FFF;
@@ -274,7 +274,7 @@ body {
 .logo-footer {
     margin: 1rem auto;
 }
-@media screen and (max-width: 785px){
+@media screen and (max-width: 769px){
     .navigation {
         padding: 18px 20px;
     }
@@ -306,8 +306,37 @@ body {
     }
     .nav-menu.ativo {
         right: 0;
+        height: 36%;
     }
     .nav-item {
-        margin: 16px 0;
+        margin: 10px 0;
+    }
+}
+@media screen and (min-width: 320px) {
+    .nav-menu.ativo {
+        height: 28%;
+    }
+    .nav-item {
+        margin: 5px 0;
+    }
+}
+@media screen and (min-width: 400px) {
+    .nav-menu.ativo {
+        height: 38%;
+    }
+    .nav-item {
+        margin: 13px 0;
+    }
+}
+@media screen and (min-width:620px) {
+    .nav-menu.ativo {
+        height: 54%;
+    }
+    .nav-item {
+        margin: 28px auto;
+    }
+    .navigation ul li a{
+        font-size: 1.5rem;
+        margin: 0 1rem;
     }
 }
