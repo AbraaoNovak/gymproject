@@ -306,15 +306,17 @@ body {
     }
     .nav-menu.ativo {
         right: 0;
-        height: 36%;
+        height: 100%;
+        width: 100%;
     }
     .nav-item {
-        margin: 10px 0;
+        margin: 20px 0;
     }
 }
 @media screen and (min-width: 320px) {
     .nav-menu.ativo {
-        height: 28%;
+        height: 100%;
+        width: 100%;
     }
     .nav-item {
         margin: 5px 0;
@@ -322,7 +324,8 @@ body {
 }
 @media screen and (min-width: 400px) {
     .nav-menu.ativo {
-        height: 38%;
+        height: 100%;
+        width: 100%;
     }
     .nav-item {
         margin: 13px 0;
@@ -330,7 +333,8 @@ body {
 }
 @media screen and (min-width:620px) {
     .nav-menu.ativo {
-        height: 54%;
+        height: 100%;
+        width: 100%;
     }
     .nav-item {
         margin: 28px auto;
